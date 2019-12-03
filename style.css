@@ -206,7 +206,6 @@ html {
     margin-bottom: 10px;
   }
   
-  /* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */
   .button[href*="twitter"] {
     background: #019fe9;
   }
@@ -263,8 +262,7 @@ span a:hover {
     width: 20vw;
     height: 10vw;
     right: 0;
-    box-sizing: border-box;
-    border: 5px white solid;
+    box-sizing: border-box;    
     overflow: hidden;
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
@@ -288,8 +286,9 @@ span a:hover {
 }
 
 .grid-anim-container{
+  padding-top: 80px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .css{
@@ -352,20 +351,20 @@ span a:hover {
   height: 126px;
   transform: scaleX(-1);
 background:url(https://38.media.tumblr.com/tumblr_mb4zsyUYCT1rvuv0d.png);
-		-webkit-animation: walk-cycle 1.0s steps(6) infinite;
-		     -o-animation: walk-cycle 1.0s steps(6) infinite;
-		        animation: walk-cycle 1.0s steps(6) infinite; /* the sprite has 6 frames hence: steps(6) */
+		-webkit-animation: walk-cycle 1s steps(6) infinite;
+		     -o-animation: walk-cycle 1s steps(6) infinite;
+		        animation: walk-cycle 1s steps(6) infinite; /* the sprite has 6 frames hence: steps(6) */
 }
 
 
 #js-animation{
   margin:0 auto; /* for demo purpose only */
-  width: 78px ; /* the total width of the sprite image divided by each frame width */
-  height: 136px;
+  width: 77px ; /* the total width of the sprite image divided by each frame width */
+  height: 140px;
 background:url(js.png);
-		-webkit-animation: walk-cycle 1.5s steps(6) infinite;
-		     -o-animation: walk-cycle 1.5s steps(6) infinite;
-		        animation: walk-cycle 1.5s steps(6) infinite; /* the sprite has 6 frames hence: steps(6) */
+		-webkit-animation: walk-cycle 1s steps(6) infinite;
+		     -o-animation: walk-cycle 1s steps(6) infinite;
+		        animation: walk-cycle 1s steps(6) infinite; /* the sprite has 6 frames hence: steps(6) */
 }
 
 
@@ -383,5 +382,5 @@ background:url(js.png);
   position: absolute;
   height: 120px;
   width: 35px;
-  left: 20%;
+  left: 15%;
 }
