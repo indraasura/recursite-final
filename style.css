@@ -1,12 +1,12 @@
 @media only screen and (max-width:755px){
     .css-text{
-        top: 95%;
+        top: 100%;
     }
     .js-text{
-        top: 105%;
+        top: 110%;
     }
     .html-text{
-        top: 110%;
+        top: 120%;
     }
 }
 
