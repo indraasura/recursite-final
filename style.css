@@ -1,3 +1,27 @@
+@media only screen and (max-width:755px){
+    .css-text{
+        top: 100%;
+    }
+    .js-text{
+        top: 110%;
+    }
+    .html-text{
+        top: 120%;
+    }
+}
+
+@media only screen and (min-width:755px){
+    .css-text{
+        top: 105%;
+    }
+    .js-text{
+        top: 118%;
+    }
+    .html-text{
+        top: 131%;
+    }
+}
+
 html {
     box-sizing: border-box;
     font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
@@ -263,20 +287,101 @@ span a:hover {
     grid-template-columns: auto auto;
 }
 
+.grid-anim-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
 .css{
-    top: 50%;
+    top: 100%;
     position: absolute;
     right: 15%;
 }
 
 .js{
-    top: 60%;
+    top: 110%;
     position: absolute;
     right: 15%;
 }
 
 .html{
-    top: 70%;
+    top: 120%;
     position: absolute;
     right: 15%;
+}
+
+
+
+.header-text{
+    font-size: 4vw;
+    text-align: center;
+    top: 50%;
+}
+
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5vw;
+    height: 5vw;
+    margin-top: 1%;
+}
+
+.css-text{
+    position: absolute;
+    left: 5%;
+    font-size: 2vw;
+}
+
+.js-text{
+    position: absolute;
+    left: 5%;
+    font-size: 2vw;
+}
+
+.html-text{
+    position: absolute;
+    left: 5%;
+    font-size: 2vw;
+}
+
+#css-animation{
+  margin:0 auto; /* for demo purpose only */
+  width: 83.33333333333333px; /* the total width of the sprite image divided by each frame width */
+  height: 126px;
+  transform: scaleX(-1);
+background:url(https://38.media.tumblr.com/tumblr_mb4zsyUYCT1rvuv0d.png);
+		-webkit-animation: walk-cycle 1.0s steps(6) infinite;
+		     -o-animation: walk-cycle 1.0s steps(6) infinite;
+		        animation: walk-cycle 1.0s steps(6) infinite; /* the sprite has 6 frames hence: steps(6) */
+}
+
+
+#js-animation{
+  margin:0 auto; /* for demo purpose only */
+  width: 78px ; /* the total width of the sprite image divided by each frame width */
+  height: 136px;
+background:url(js.png);
+		-webkit-animation: walk-cycle 1.5s steps(6) infinite;
+		     -o-animation: walk-cycle 1.5s steps(6) infinite;
+		        animation: walk-cycle 1.5s steps(6) infinite; /* the sprite has 6 frames hence: steps(6) */
+}
+
+
+/* Walk cycle animation */
+	@keyframes walk-cycle{
+      0% {
+        background-position: 0px;
+      }
+      100% {
+        background-position: -500px; /* loop the animation frames once the end of the image is reached, the total width of the sprite image is 500px  */
+      }
+  }
+
+.html-man{
+  position: absolute;
+  height: 120px;
+  width: 35px;
+  left: 20%;
 }
