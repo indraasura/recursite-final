@@ -256,7 +256,6 @@ span a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    left: 20%;
 }
 .avatar {
     width: 20vw;
