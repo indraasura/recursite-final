@@ -282,7 +282,7 @@ span a:hover {
 
 .grid-container{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
 }
 
 .grid-anim-container{
