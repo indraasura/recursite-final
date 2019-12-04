@@ -1,0 +1,207 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+html {
+    box-sizing: border-box;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5vw;
+    height: 5vw;
+    margin-top: 1%;
+}
+
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    background: #040a22;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  h2 {
+    margin-top: 0;
+    padding-top: 0.8em;
+    text-align: center;
+    color: white;
+  }
+  
+  nav {
+    position: relative;
+    perspective: 600px;
+  }
+  
+  .cool > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cool > li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dropdown {
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    padding: 20px;
+    top: -20px;
+    border-radius: 2px;
+    transition: all 0.5s;
+    transform: translateY(100px);
+    will-change: opacity;
+    display: none;
+  }
+  
+  .trigger-enter .dropdown {
+    display: block;
+  }
+  
+  .trigger-enter-active .dropdown {
+    opacity: 1;
+  }
+  
+  .dropdownBackground {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1),
+      0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s, opacity 0.1s, transform 0.2s;
+    transform-origin: 50% 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+  }
+  
+  .dropdownBackground.open {
+    opacity: 1;
+  }
+  
+
+  
+  .bio {
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+  }
+  
+  .bio img {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .courses {
+    min-width: 300px;
+  }
+  
+  .courses li {
+    padding: 10px 0;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown a {
+    text-decoration: none;
+    color: #348d7c;
+  }
+  
+  a.button {
+    background: black;
+    display: block;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .button[href*="twitter"] {
+    background: #019fe9;
+  }
+  .button[href*="ramonmorcillo"] {
+    background: #019fe9;
+  }
+  
+
+
+span a {
+    font-size: 18px;
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all 0.4s ease-in-out;
+}
+span a:hover {
+    color: #fff;
+}
+ .card-html {
+	 position: relative;
+     width: 300px;
+     left: 50em;
+     top: 20em;
+}
+ .card-html::before, .card-html::after {
+	 position: absolute;
+	 content: "";
+	 top: -2px;
+	 left: -2px;
+	 right: -2px;
+	 bottom: -2px;
+}
+ .card-html::before {
+	 z-index: -1;
+	 background: #040a22;
+}
+ .card-html::after {
+	 --gradientColor1: #09ec3a;
+	 --gradientColor2: #040c27;
+	 --gradientColor3: #37a5ee;
+	 z-index: -2;
+	 background: linear-gradient(235deg, var(--gradientColor1), var(--gradientColor2), var(--gradientColor3));
+	 filter: blur(40px);
+	 animation: glow 4s linear infinite;
+}
+ .card-html .card-body {
+	 padding: 20px;
+	 color: white;
+}
+
+
+ @keyframes glow {
+	 50% {
+		 --gradientColor1: rgba(9, 236, 58, 0.6);
+		 --gradientColor2: rgba(4, 12, 39, 0.6);
+		 --gradientColor3: rgba(55, 165, 238, 0.6);
+	}
+}

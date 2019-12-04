@@ -30,3 +30,11 @@ function handleLeave() {
 
 triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
 triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
+
+let right = document.getElementById('right');
+var cardCount = 3;
+const titles = ['Awesome css tricks to learn!', 'Do not stop studying!', 'Keep calm and border: 1px solid;'];
+const image = 'https://upload.wikimedia.org/wikipedia/commons/9/93/Black-Large.png';
+
+
+
