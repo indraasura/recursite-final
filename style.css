@@ -492,11 +492,11 @@ background:url(https://38.media.tumblr.com/tumblr_mb4zsyUYCT1rvuv0d.png);
 #js-animation{
   margin:0 auto; /* for demo purpose only */
   width: 70px ; /* the total width of the sprite image divided by each frame width */
-  height: 150px;
+  height: 140px;
 background:url(js.png);
-		-webkit-animation: walk-cycle 1s steps(6) infinite;
-		     -o-animation: walk-cycle 1s steps(6) infinite ;
-		        animation: walk-cycle 1s steps(6) infinite; /* the sprite has 6 frames hence: steps(6) */
+		-webkit-animation: walk-cycle 1s steps(6);
+		     -o-animation: walk-cycle 1s steps(6);
+		        animation: walk-cycle 1s steps(6); /* the sprite has 6 frames hence: steps(6) */
 }
 
 
