@@ -1,80 +1,4 @@
-@media only screen and (max-width:755px){
-    .css{
-        top: 70%;
-        left: 15%;
-    }
-    .js{
-        top: 75%;
-        left: 15%;
-    }
-    .html{
-        top: 80%;
-        left: 15%;
-    }
-    .css-arrow{
-      top: 70%;
-      left: 45%;
-    }
-    .js-arrow{
-      top: 75%;
-      left: 45%;
-    }
-    .html-arrow{
-      top: 80%;
-      left: 45%;
-    }
-    .css-button{
-      top: 45%;
-    }
-    .js-button{
-      top: 70%;
-    }
-    .html-button{
-      top: 95%;
-    }
-    .details-section{
-      top: 90%;
-    }
-}
 
-@media only screen and (min-width:755px){
-    .css{
-        top: 105%;
-        left: 15%;
-    }
-    .js{
-        top: 125%;
-        left: 15%;
-    }
-    .html{
-        top: 145%;
-        left: 15%;  
-    }
-    .css-arrow{
-      top: 110%;
-      left: 45%;
-    }
-    .js-arrow{
-      top: 130%;
-      left: 45%;
-    }
-    .html-arrow{
-      top: 150%;
-      left: 45%;
-    }
-    .css-button{
-      top: 200%;
-    }
-    .js-button{
-      top: 300%;
-    }
-    .html-button{
-      top: 400%;
-    }
-    .details-section{
-      top: 180%;
-    }
-}
 
 html {
     box-sizing: border-box;
@@ -320,15 +244,21 @@ span a:hover {
 
 
 .css-button{
-  position: relative;
+  position: absolute;
+  margin-top: 44%;
+  margin-left: 10%;
 }
 
 .js-button{
-  position: relative;
+  position: absolute;
+  margin-top: 54%;
+  margin-left: 10%;
 }
 
 .html-button{
-  position: relative;
+  position: absolute;
+  margin-top: 64%;
+  margin-left: 10%;
 }
 
 
@@ -417,39 +347,105 @@ span a:hover {
 }
 
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  grid-template-areas: 
+  "a a a"
+  "b c d"
+  "e f g"
+  "h i j"
+  "k k k"
+  ;
+  align-items: start;
 }
 
-.grid-anim-container{
-  padding-top: 80px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.header{
+  grid-area: a;
 }
+
+.html-animation{
+  grid-area: b;
+}
+
+.js-animation{
+  grid-area: c;
+}
+
+.css-animation{
+  grid-area: d;
+}
+
+.html-animation-text{
+  grid-area: e;
+}
+
+.js-animation-text{
+  grid-area: f;
+}
+
+.css-animation-text{
+  grid-area: g;
+}
+
+.stack{
+  grid-area: h;
+}
+
+.arrows{
+  grid-area: i;
+}
+
+.buttons{
+  grid-area: j;
+}
+
+.details{
+  grid-area: k;
+}
+
+
+
+
+
+
+
 
 .css{
     position: absolute;
+    margin-top: 45%;
+    margin-left: 10%;
 }
 
 .js{
     position: absolute;
+    margin-top: 55%;
+    margin-left: 10%;
 }
 
 .html{
     position: absolute;
+    margin-top: 65%;
+    margin-left: 10%;
 }
 
 .css-arrow{
   position: absolute;
+  margin-top:45%;
+  margin-left: 10%;
 }
 
 .js-arrow{
   position: absolute;
+  margin-top: 55%;
+  margin-left: 10%;
 }
 
 .html-arrow{
   position: absolute;
+  margin-top: 65%;
+  margin-left: 10%;
 }
 
 
@@ -515,3 +511,69 @@ background:url(js.png);
 
 
  
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to top, #dc674e, #e49191  );
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
