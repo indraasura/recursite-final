@@ -355,14 +355,18 @@ span a:hover {
   "a a a"
   "b c d"
   "e f g"
-  "h i j"
   "k k k"
+  "h i j"
   ;
   align-items: start;
 }
 
 .header{
   grid-area: a;
+}
+
+.mid-text{
+  grid-area: k;
 }
 
 .html-animation{
@@ -454,6 +458,12 @@ span a:hover {
     font-size: 4vw;
     text-align: center;
     top: 50%;
+}
+
+.middle-text{
+  font-size: 4vw;
+  text-align: center;
+  margin-top: 30%;
 }
 
 
