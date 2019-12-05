@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Recursite</title>
     <link rel="stylesheet" href="details.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">  
 </head>
 
 <body onload="cards();">
@@ -71,46 +72,51 @@
         </ul>
     </nav>
     <!--NAVBAR END-->
-
-    <div class="card-html">
-        <div class="card-body">
-            <h1>Sora</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur.
-            </p>
-        </div>
-    </div>
-    <div class="card-css">
-        <div class="card-body">
-            <h1>Sora</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur.
-            </p>
-        </div>
-    </div>
-    <div class="card-js">
-        <div class="card-body">
-            <h1>Sora</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur.
-            </p>
-        </div>
-    </div>
+    <div class="main">
+        <ul class="cards">
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img style="padding: 10px; height: auto"src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png"></div>
+              <div class="card_content">
+                <h2 class="card_title">HTML</h2>
+                <p class="card_text">HTML is a markup language used that was used to create the basic structure of this website. HTML was used 
+                    to mark and describe each of the types of content ( text, image, etc ) of Recursite so that the browser can display them correctly. 
+                </p>
+                <a href="https://www.w3schools.com/html/" class="btn card_btn" style="text-align: center;">Learn HTML</a>
+                <a href="index.html" class="btn card_btn" style="text-align: center;">Go Back</a>              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img style="padding: 10px; height: auto" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png"></div>
+              <div class="card_content">
+                <h2 class="card_title">CSS</h2>
+                <p class="card_text">What is a website without its awesthetics? CSS helps us to beautify our website by adding various styles to the HTML elements and
+                    define how they will look to the user. Recursite uses CSS to define how it looks and also to make animations possible.
+                </p>
+                <a href="https://www.w3schools.com/css/" class="btn card_btn" style="text-align: center;">Learn CSS</a>
+                <a href="index.html" class="btn card_btn" style="text-align: center;">Go Back</a> 
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="https://logodix.com/logo/374972.png"></div>
+              <div class="card_content">
+                <h2 class="card_title">JS</h2>
+                <p class="card_text">An HTML page is static by default. JS makes any website more interactive which 
+                    may help designers to guide the visitors with additional information or guide them through walkthroughs. Visual effects are also supported by JS.
+                </p>
+                <a href="https://www.w3schools.com/js/" class="btn card_btn" style="text-align: center;">Learn JS</a>
+                <a href="index.html" class="btn card_btn" style="text-align: center;">Go Back</a> 
+              </div>
+            </div>
+          </li>
+        
+        </ul>
+      </div>
+      
+      <h3 class="made_by" style="color: white;">Recursite: By Swarup Hegde</h3>
 
     <script src="index.js"></script>
 </body>
